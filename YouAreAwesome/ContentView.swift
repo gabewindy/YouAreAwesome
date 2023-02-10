@@ -20,13 +20,13 @@ struct ContentView: View {
                 .padding(.bottom, 100)
             Text(messageString)
                 .font(.largeTitle)
-                .fontWeight(.heavy)
+                .fontWeight(.black)
                 .foregroundColor(.red)
                 .italic()
             HStack {
                 Button("awesome", action: {messageString = "you are awesome"}).buttonStyle(.borderedProminent) // standard format
                 Button("great") {
-                    messageString = "you are great"
+                    messageString = "you are great!!!!"
                 }.buttonStyle(.borderedProminent) // trailing closure format
             }
         }.padding(.trailing, 100)
