@@ -11,7 +11,7 @@ struct ContentView: View {
     @State private var messageString = ""
     var body: some View {
         VStack {
-            Image(systemName: "swift")
+            Image(systemName: "3.circle")
                 .resizable()
                 .scaledToFit()
                 .foregroundColor(.orange) // comments
