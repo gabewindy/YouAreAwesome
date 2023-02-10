@@ -29,6 +29,7 @@ struct ContentView: View {
                     messageString = "you are great!!!!"
                 }.buttonStyle(.borderedProminent) // trailing closure format
             }
+            Rectangle().foregroundColor(.green)
         }.padding(.trailing, 100)
     }
 }
