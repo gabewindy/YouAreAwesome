@@ -8,22 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var messageString = "asd "
+    @State private var messageString = "when the genius bar needs help, they call you! "
     var body: some View {
         VStack {
-            Image(systemName: "3.circle")
-                .resizable()
-                .scaledToFit()
-                .foregroundColor(.orange) // comments
+//            Image(systemName: "3.circle")
+//                .resizable()
+//                .scaledToFit()
+//                .foregroundColor(.orange) // comments
             Text(messageString)
                 .font(.largeTitle)
                 .fontWeight(.heavy)
                 .minimumScaleFactor(0.5)
                 .multilineTextAlignment(.center)
                 .foregroundColor(.red)
-//                .padding()
-//                .frame(width: 300, height: 150)
+                .frame(height: 150)
+                .frame(maxWidth: .infinity)
                 .border(.orange, width: 1)
+                .padding(30)
             HStack {
                 Button("awesome", action: {messageString = "you are awesome"}).buttonStyle(.borderedProminent) // standard format
                 Button("great") {
